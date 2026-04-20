@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Tramitto.Application/Tramitto.Application.csproj" />
+    <Project Path="src/Tramitto.Domain/Tramitto.Domain.csproj" />
+    <Project Path="src/Tramitto.Infrastructure/Tramitto.Infrastructure.csproj" />
+    <Project Path="src/Tramitto.WebApi/Tramitto.WebApi.csproj" />
+  </Folder>
+</Solution>
