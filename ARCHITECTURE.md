@@ -1,4 +1,4 @@
-# 🏗️ Tramito — Arquitectura del Sistema
+# 🏗️ Tramitto — Arquitectura del Sistema
 
 ## 1. Stack Tecnológico Seleccionado
 
