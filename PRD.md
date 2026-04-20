@@ -1,7 +1,7 @@
-# 📄 PRD: Tramito — Red de Mandados y Trámites Bajo Demanda
+# 📄 PRD: Tramitto — Red de Mandados y Trámites Bajo Demanda
 
 ## 1. Meta-Información
-* **Nombre:** Tramito
+* **Nombre:** Tramitto
 * **Objetivo:** Lanzamiento de MVP validable en Cumaral, Meta (Colombia). Ciudad vecina de referencia: Villavicencio.
 * **Población objetivo:** ~25.500 habitantes (~16.600 urbanos).
 * **Plataformas:** 

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* shadcn/ui design tokens — light mode */
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0 0);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.145 0 0);
+  --color-primary: oklch(0.205 0 0);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-secondary: oklch(0.97 0 0);
+  --color-secondary-foreground: oklch(0.205 0 0);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-accent: oklch(0.97 0 0);
+  --color-accent-foreground: oklch(0.205 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-destructive-foreground: oklch(0.985 0 0);
+  --color-border: oklch(0.922 0 0);
+  --color-input: oklch(0.922 0 0);
+  --color-ring: oklch(0.708 0 0);
+
+  /* shadcn radius */
+  --radius: 0.5rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Tramitto — Admin tokens */
+  --color-admin-primary: #1e40af;
+  --color-admin-primary-hover: #1d4ed8;
+  --color-admin-sidebar-bg: #0f172a;
+  --color-admin-sidebar-text: #cbd5e1;
+  --color-admin-sidebar-active: #1e40af;
+
+  /* Tramitto — Helper tokens */
+  --color-helper-primary: #16a34a;
+  --color-helper-primary-hover: #15803d;
+  --color-helper-sidebar-bg: #14532d;
+  --color-helper-sidebar-text: #bbf7d0;
+  --color-helper-sidebar-active: #16a34a;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
