@@ -48,7 +48,7 @@ export function HelperLayout() {
           <nav className="flex-1 space-y-0.5 px-3 py-4">
             {navItems.map(({ to, icon: Icon, label }) => (
               <Tooltip key={to}>
-                <TooltipTrigger asChild>
+                <TooltipTrigger className="w-full">
                   <NavLink
                     to={to}
                     className={({ isActive }) =>
