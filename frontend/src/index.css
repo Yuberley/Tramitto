@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* shadcn/ui design tokens — light mode */
+  /* ── shadcn/ui design tokens ─────────────────────────────────── */
   --color-background: oklch(1 0 0);
   --color-foreground: oklch(0.145 0 0);
   --color-card: oklch(1 0 0);
@@ -29,19 +29,41 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  /* Tramitto — Admin tokens */
-  --color-admin-primary: #1e40af;
-  --color-admin-primary-hover: #1d4ed8;
-  --color-admin-sidebar-bg: #0f172a;
-  --color-admin-sidebar-text: #cbd5e1;
-  --color-admin-sidebar-active: #1e40af;
+  /* ── Tramitto — Admin panel theme ────────────────────────────── */
+  /* Cambiar aquí para redefinir todo el panel de administración   */
+  --color-admin-accent:           #1e40af;   /* blue-800  — botón activo, badge, dot */
+  --color-admin-accent-hover:     #1d4ed8;   /* blue-700  — hover de accent */
+  --color-admin-accent-subtle:    #1e3a8a33; /* blue-900/20 — badge bg translúcido  */
+  --color-admin-accent-text:      #93c5fd;   /* blue-300  — texto badge             */
+  --color-admin-sidebar-bg:       #0f172a;   /* slate-900 — fondo sidebar           */
+  --color-admin-sidebar-border:   #1e293baa; /* slate-800 — borde divisor           */
+  --color-admin-sidebar-item:     #94a3b8;   /* slate-400 — texto ítem inactivo     */
+  --color-admin-sidebar-item-hover-bg:  #1e293b; /* slate-800 */
+  --color-admin-sidebar-item-hover-text: #f1f5f9; /* slate-100 */
+  --color-admin-sidebar-section-bg: #1e293b; /* slate-800 — widget HealthScore      */
+  --color-admin-user-email:       #64748b;   /* slate-500 */
+  --color-admin-page-bg:          #f1f5f9;   /* slate-100 — fondo del área de contenido */
+  --color-admin-header-border:    #e2e8f0;   /* slate-200 */
+  --color-admin-header-title:     #1e293b;   /* slate-800 */
+  --color-admin-header-subtitle:  #94a3b8;   /* slate-400 */
 
-  /* Tramitto — Helper tokens */
-  --color-helper-primary: #16a34a;
-  --color-helper-primary-hover: #15803d;
-  --color-helper-sidebar-bg: #14532d;
-  --color-helper-sidebar-text: #bbf7d0;
-  --color-helper-sidebar-active: #16a34a;
+  /* ── Tramitto — Helper panel theme ──────────────────────────── */
+  /* Cambiar aquí para redefinir todo el panel del helper          */
+  --color-helper-accent:          #0AAC49;   /* brand green — botón activo, badge, dot */
+  --color-helper-accent-hover:    #089a40;   /* green más oscuro — hover              */
+  --color-helper-accent-subtle:   #0AAC4933; /* brand/20 — badge bg translúcido      */
+  --color-helper-accent-text:     #6ee7a8;   /* green-300 — texto badge              */
+  --color-helper-sidebar-bg:      #0f172a;   /* mismo slate-900 que admin            */
+  --color-helper-sidebar-border:  #1e293baa; /* slate-800                            */
+  --color-helper-sidebar-item:    #94a3b8;   /* slate-400                            */
+  --color-helper-sidebar-item-hover-bg:  #1e293b;
+  --color-helper-sidebar-item-hover-text: #f1f5f9;
+  --color-helper-sidebar-section-bg: #1e293b;
+  --color-helper-user-email:      #64748b;
+  --color-helper-page-bg:         #f0fdf4;   /* green-50 — tinte verde muy sutil en el área de contenido */
+  --color-helper-header-border:   #dcfce7;   /* green-100 */
+  --color-helper-header-title:    #14532d;   /* green-900 */
+  --color-helper-header-subtitle: #16a34a;   /* green-600 */
 }
 
 @layer base {
