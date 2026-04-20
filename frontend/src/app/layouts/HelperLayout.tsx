@@ -25,12 +25,12 @@ const navItems = [
 export function HelperLayout() {
   return (
     <TooltipProvider delayDuration={0}>
-      <div className="flex h-screen bg-green-50">
+      <div className="flex h-screen bg-slate-100">
         {/* Sidebar */}
-        <aside className="flex w-64 flex-col bg-green-950 text-green-200">
+        <aside className="flex w-64 flex-col bg-slate-900 text-slate-300">
           {/* Logo */}
-          <div className="flex h-16 items-center gap-2.5 border-b border-green-800/60 px-5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-500 text-white font-bold text-sm">
+          <div className="flex h-16 items-center gap-2.5 border-b border-slate-700/60 px-5">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white font-bold text-sm">
               T
             </div>
             <span className="text-base font-semibold text-white tracking-tight">
@@ -38,7 +38,7 @@ export function HelperLayout() {
             </span>
             <Badge
               variant="secondary"
-              className="ml-auto bg-green-700/40 text-green-300 border-0 text-[10px] px-1.5 py-0"
+              className="ml-auto bg-blue-700/30 text-blue-300 border-0 text-[10px] px-1.5 py-0"
             >
               Helper
             </Badge>
@@ -55,8 +55,8 @@ export function HelperLayout() {
                       cn(
                         'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all',
                         isActive
-                          ? 'bg-green-600 text-white shadow-sm'
-                          : 'text-green-400 hover:bg-green-900 hover:text-green-100',
+                          ? 'bg-blue-600 text-white shadow-sm'
+                          : 'text-slate-400 hover:bg-slate-800 hover:text-slate-100',
                       )
                     }
                   >
@@ -69,17 +69,17 @@ export function HelperLayout() {
             ))}
           </nav>
 
-          <Separator className="bg-green-800/60" />
+          <Separator className="bg-slate-700/60" />
 
           {/* Reputation badge */}
           <div className="px-4 py-3">
-            <div className="flex items-center gap-2 rounded-lg bg-green-900/60 px-3 py-2.5">
+            <div className="flex items-center gap-2 rounded-lg bg-slate-800 px-3 py-2.5">
               <Star className="h-4 w-4 text-yellow-400 fill-yellow-400 shrink-0" />
               <div className="flex-1 min-w-0">
-                <p className="text-[11px] text-green-400">HealthScore</p>
+                <p className="text-[11px] text-slate-400">HealthScore</p>
                 <p className="text-sm font-bold text-white">—</p>
               </div>
-              <Badge className="bg-green-600 hover:bg-green-600 text-white text-[10px] border-0">
+              <Badge className="bg-blue-600 hover:bg-blue-600 text-white text-[10px] border-0">
                 Activo
               </Badge>
             </div>
@@ -88,20 +88,20 @@ export function HelperLayout() {
           {/* User footer */}
           <div className="flex items-center gap-3 px-4 pb-4">
             <Avatar className="h-8 w-8">
-              <AvatarFallback className="bg-green-600 text-white text-xs font-bold">
+              <AvatarFallback className="bg-blue-700 text-white text-xs font-bold">
                 HP
               </AvatarFallback>
             </Avatar>
             <div className="flex-1 min-w-0">
-              <p className="text-xs font-medium text-green-100 truncate">Helper</p>
-              <p className="text-[11px] text-green-600 truncate">helper@tramitto.co</p>
+              <p className="text-xs font-medium text-slate-200 truncate">Helper</p>
+              <p className="text-[11px] text-slate-500 truncate">helper@tramitto.co</p>
             </div>
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="h-7 w-7 text-green-600 hover:text-green-200 hover:bg-green-900"
+                  className="h-7 w-7 text-slate-500 hover:text-slate-200 hover:bg-slate-800"
                 >
                   <LogOut className="h-3.5 w-3.5" />
                 </Button>
@@ -114,24 +114,24 @@ export function HelperLayout() {
         {/* Main */}
         <div className="flex flex-1 flex-col overflow-hidden">
           {/* Header */}
-          <header className="flex h-16 items-center justify-between border-b border-green-100 bg-white px-6 shadow-sm">
+          <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-6 shadow-sm">
             <div>
-              <h1 className="text-base font-semibold text-green-900">Portal del Helper</h1>
-              <p className="text-xs text-green-500">Cumaral, Meta — Colombia</p>
+              <h1 className="text-base font-semibold text-slate-800">Portal del Helper</h1>
+              <p className="text-xs text-slate-400">Cumaral, Meta — Colombia</p>
             </div>
             <div className="flex items-center gap-2">
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Button variant="ghost" size="icon" className="relative h-8 w-8 text-slate-500">
                     <Bell className="h-4 w-4" />
-                    <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-green-500" />
+                    <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-blue-600" />
                   </Button>
                 </TooltipTrigger>
                 <TooltipContent>Notificaciones</TooltipContent>
               </Tooltip>
               <Separator orientation="vertical" className="h-6 mx-1" />
               <Avatar className="h-8 w-8 cursor-pointer">
-                <AvatarFallback className="bg-green-600 text-white text-xs font-bold">
+                <AvatarFallback className="bg-blue-700 text-white text-xs font-bold">
                   HP
                 </AvatarFallback>
               </Avatar>
