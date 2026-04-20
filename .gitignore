@@ -16,9 +16,15 @@ frontend/.env.production
 infra/*.env
 infra/data/
 
+# ── Tools ────────────────────────────────────────────────────────────────────
+.playwright-mcp/
+
 # ── Global ────────────────────────────────────────────────────────────────────
 .env
 .env.local
 .DS_Store
 Thumbs.db
 *.log
+*.png
+*.jpg
+*.jpeg
